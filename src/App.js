@@ -2,6 +2,7 @@ import './App.css';
 import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from 'react';
+import { useState } from 'react/cjs/react.production.min';
 
 
 
@@ -10,9 +11,8 @@ function App() {
   const sb = useRef()
   useEffect(() => {
     // gsap.registerPlugin(ScrollTrigger);
-    gsap.from(sb.current, { duration: 5, scale: 1 });
+    gsap.from(sb.current, { duration: 10, scale: 2.1 });
   }, [])
-
 
   return (
     <div className="app">
