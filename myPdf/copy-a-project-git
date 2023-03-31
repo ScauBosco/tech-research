@@ -1,0 +1,10 @@
+## how to copy others project into your local env and push to your remote github?
+### 1. git clone in your loacal, then delete this .git folder 
+### 2. create a new repo in your github
+### 3. in your local
+```
+git init
+git add .
+git commit -m"init"
+git remote add origin https://github.com/ScauBosco/"remote-repo-name" 
+```
